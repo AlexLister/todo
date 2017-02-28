@@ -1,4 +1,7 @@
-import jinja2
 import web
 
-print("Hello world")
+TASKS = ["Learn to create templates", "Learn to populate them using jinja2"]
+
+
+
+
