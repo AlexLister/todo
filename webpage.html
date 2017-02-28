@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Todo List</title>
+    <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <style>
+
+    body {
+      background-image: url("background.png");
+      background-repeat: no-repeat;
+
+      font-family: "Roboto", sans-serif;
+    }
+        
+    #todolist {
+
+      width: 600px;
+      min-height: 600px;
+      margin: 60px auto;
+
+      background-color: #eceff1;
+	   opacity: 0.8;
+
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    h1 {
+      background-color: #009688;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    form, p {
+      width: 80%;
+      padding: 10px;
+      margin: 10px auto;
+    }
+
+    p {
+      color: #000000;
+      opacity: 0.8;
+      margin-top: 20px;
+      margin-bottom: 0px;
+    }
+
+    #newTodo {
+      background-color: #4db6ac;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    #newTodoTask {
+      width: 100%;
+      color: #000000;
+      border: none;
+      background-color: #4db6ac;
+      font-size: 100%;
+    }
+
+    .tasklist {
+      background-color: #b2dfdb;
+    }
+
+    .tasklist:hover {
+      background-color: #26a69a;
+    }
+
+    .task {
+      text-align: left;
+      background: transparent;
+      border: none;
+      width: 100%;
+      font-size: 100%;
+    }
+
+    
+        
+    </style>
+  </head>
+
+  <body>
+
+    <div id="todolist">
+
+      <h1>Todo</h1>
+
+      <form id="newTodo" action="add/">
+        <input id="newTodoTask" type="text" name="task" placeholder="Add new task..." autocomplete="off" >
+      </form>
+
+      <p>Click to complete a task:</p>
+
+      <form class="tasklist" action="complete/">
+        <input type="hidden" name="id" value="1"></input>
+        <input class="task" type="submit" value="Learn some l33t coding skills"></input>
+      </form>
+
+      <form class="tasklist" action="complete/">
+        <input type="hidden" name="id" value="2"></input>
+        <input class="task" type="submit" value="Build a web server"></input>
+      </form>
+
+      <form class="tasklist" action="complete/">
+        <input type="hidden" name="id" value="3"></input>
+        <input class="task" type="submit" value="Profit!"></input>
+      </form>
+
+    </div>
+  </body>
+</html>
